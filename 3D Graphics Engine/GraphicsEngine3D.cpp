@@ -15,26 +15,26 @@ struct mesh {
 
 class GraphicsEngine3D : public olcConsoleGameEngine
 {
-public :
+public:
 	GraphicsEngine3D()
 	{
 		m_sAppName = L"3D Demo ";
 	}
 
-private: 
+private:
 	mesh meshcube;
 
 public:
 	bool OnUserCreate() override
-{
+	{
 		meshCube.tris = ()
 
-	return true;
-}
+			return true;
+	}
 public:
-bool OnUserUpdate(float fElapsedTime) override {
-	return true;
-}
+	bool OnUserUpdate(float fElapsedTime) override {
+		return true;
+	}
 
 };
 
