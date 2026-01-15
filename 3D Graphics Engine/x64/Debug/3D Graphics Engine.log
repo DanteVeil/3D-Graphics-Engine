@@ -1,1 +1,17 @@
-﻿  3D Graphics Engine.vcxproj -> C:\Users\draku\VStudioProjects\3D Graphics Engine\x64\Debug\3D Graphics Engine.exe
+﻿  GraphicsEngine3D.cpp
+C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\olcConsoleGameEngine.h(759,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'GraphicsEngine3D.cpp')
+  
+C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\olcConsoleGameEngine.h(1099,31): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'GraphicsEngine3D.cpp')
+  
+C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\olcConsoleGameEngine.h(1196,4): warning C4312: 'type cast': conversion from 'DWORD' to 'olcConsoleGameEngine *' of greater size
+  (compiling source file 'GraphicsEngine3D.cpp')
+  
+C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(154,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(154,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(153,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(153,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(152,55): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(152,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  3D Graphics Engine.vcxproj -> C:\Users\draku\VStudioProjects\3D-Graphics-Engine\x64\Debug\3D Graphics Engine.exe
