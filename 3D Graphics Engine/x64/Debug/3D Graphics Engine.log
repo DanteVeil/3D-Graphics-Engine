@@ -8,10 +8,10 @@ C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\olcConsoleG
 C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\olcConsoleGameEngine.h(1196,4): warning C4312: 'type cast': conversion from 'DWORD' to 'olcConsoleGameEngine *' of greater size
   (compiling source file 'GraphicsEngine3D.cpp')
   
-C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(154,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(154,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(153,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(153,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(152,55): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(152,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(174,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(174,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(173,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(173,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(172,56): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\draku\VStudioProjects\3D-Graphics-Engine\3D Graphics Engine\GraphicsEngine3D.cpp(172,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   3D Graphics Engine.vcxproj -> C:\Users\draku\VStudioProjects\3D-Graphics-Engine\x64\Debug\3D Graphics Engine.exe
