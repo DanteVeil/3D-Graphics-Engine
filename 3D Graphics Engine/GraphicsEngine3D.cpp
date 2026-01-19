@@ -142,9 +142,9 @@ public:
 			line2.y = triTranslated.p[2].y - triTranslated.p[0].y;
 			line2.z = triTranslated.p[2].z - triTranslated.p[0].z;
 
-			normal.x = line1.y * line2.z - line1.z - line2.y;
-			normal.y = line1.x * line2.z - line1.z - line2.x;
-			normal.z = line1.x * line2.y - line1.y - line2.x;
+			normal.x = line1.y * line2.z - line1.z * line2.y;
+			normal.y = line1.z * line2.x - line1.x * line2.z;
+			normal.z = line1.x * line2.y - line1.y * line2.x;
 
 			float l = sqrtf(normal.x * normal.x + normal.y * normal.y + normal.z * normal.z);
 
