@@ -18,7 +18,7 @@ A custom-built 3D graphics engine created to explore rendering techniques and ga
 
 ## 🛠️ Built With
 
-* **Language:** [e.g., C++ 17]
+* **Language:** [C++ 17]
 * **Graphics API:** [e.g., OpenGL / Vulkan / DirectX 12]
 * **Windowing:** [e.g., GLFW / SDL2]
 * **Math Library:** [e.g., GLM / Eigen]
