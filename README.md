@@ -1,37 +1,36 @@
-# 3D Graphics Engine
+# 3D Console Graphics Engine
 
-A custom-built 3D graphics engine created to explore rendering techniques and game development fundamentals. This project serves as a sandbox for implementing 3D algorithms, shader programming, and real-time rendering.
+A lightweight, custom-built 3D graphics engine written in C++. This project demonstrates the fundamentals of 3D projection, matrix mathematics, and rendering pipelines by drawing 3D geometry directly into the console window.
 
-**🚧 Project Status:** *In active development. More features coming soon.*
+It currently utilizes the [olcConsoleGameEngine](https://github.com/OneLoneCoder/olcPixelGameEngine/tree/master/olcConsoleGameEngine.h) to handle the screen buffer.
 
-## 📸 Screenshots
+**🚧 Project Status:** *Active Development. Currently rendering a rotating 3D Cube with back-face culling.*
 
-![Engine Demo](https://via.placeholder.com/800x400?text=Your+Engine+Screenshot+Here)
+## 📸 Demo
 
-## ✨ Features
+![Console Engine Demo](https://via.placeholder.com/800x400?text=Rotating+Cube+in+Console)
 
-* **Rendering Pipeline:** Basic 3D rendering loop.
-* **Camera System:** First-person flying camera (WASD + Mouse).
-* **Model Loading:** Support for loading basic meshes (e.g., .OBJ, .FBX).
-* **Shaders:** Custom shader support for lighting and materials.
-* **Lighting:** Basic implementation (e.g., Phong/Blinn-Phong).
+## ✨ Features implemented
+
+* **Software Rendering:** Pure mathematical rendering without GPU APIs (OpenGL/DirectX).
+* **Projection Matrix:** Converts 3D space coordinates into 2D screen space.
+* **Matrix Transformations:** Supports rotation (X and Z axes) and translation.
+* **Back-Face Culling:** Calculates surface normals to determine visibility, drawing only faces facing the camera.
+* **Rasterization:** Draws triangle primitives to the console buffer.
 
 ## 🛠️ Built With
 
-* **Language:** [C++ 17]
-* **Graphics API:** [e.g., OpenGL / Vulkan / DirectX 12]
-* **Windowing:** [e.g., GLFW / SDL2]
-* **Math Library:** [e.g., GLM / Eigen]
-* **Asset Loading:** [e.g., Assimp / tinyobjloader]
+* **Language:** C++
+* **Framework:** `olcConsoleGameEngine.h` (Single header console game engine)
+* **Math:** Custom vector and matrix structs (`vec3d`, `mat4x4`)
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-Ensure you have the following installed on your machine:
-* [Compiler, e.g., GCC / Clang / MSVC]
-* [Build System, e.g., CMake 3.10+]
-* [Dependencies, e.g., GPU Drivers]
+* A C++ Compiler (Visual Studio, G++, or Clang).
+* **olcConsoleGameEngine.h**: You need to download this header file and place it in your project directory. [Download it here](https://github.com/OneLoneCoder/olcPixelGameEngine/tree/master/olcConsoleGameEngine.h).
+* *Note: If you are on Linux/Mac, you may need ncurses dependencies for the OLC engine.*
 
 ### Building the Project
 
@@ -41,34 +40,42 @@ Ensure you have the following installed on your machine:
     cd 3D-Graphics-Engine
     ```
 
-2.  **Generate build files**
+2.  **Ensure dependencies**
+    Make sure `olcConsoleGameEngine.h` is in the same folder as your `.cpp` file.
+
+3.  **Compile**
+    * **Visual Studio:** Add the file to a standard Win32 Console Project.
+    * **G++ (Linux):**
+        ```bash
+        g++ -o 3d_engine main.cpp -lX11 -lGL -lpthread -lpng -lstdc++fs
+        ```
+        *(Note: Linux flags depend on the specific version of the OLC header used).*
+
+4.  **Run**
     ```bash
-    mkdir build && cd build
-    cmake ..
+    ./3d_engine
     ```
 
-3.  **Compile and Run**
-    ```bash
-    make
-    ./YourEngineName
-    ```
+## 🎮 How it Works
 
-## 🎮 Controls
-
-| Key | Action |
-| :--- | :--- |
-| **W, A, S, D** | Move Camera |
-| **Mouse** | Look Around |
-| **Space / Shift** | Fly Up / Down |
-| **Esc** | Close Application |
+The engine currently runs an automatic loop:
+1.  **Define a Cube:** A mesh is created using coordinate vectors.
+2.  **Update Loop:**
+    * Calculates rotation matrices based on elapsed time (`fTheta`).
+    * Transforms triangles (Rotate -> Translate).
+    * Calculates the **Normal** vector of the triangle.
+    * Performs **Back-Face Culling** (if the normal points away, skip drawing).
+    * Projects the 3D points to 2D space.
+    * Scales to the console window size and draws the triangle.
 
 ## 🔮 Roadmap
 
-I plan to add the following features in the near future:
-- [ ] Shadows (Shadow Mapping)
-- [ ] Post-processing effects (Bloom, HDR)
-- [ ] Physics integration
-- [ ] Scene graph hierarchy
+Future improvements planned:
+- [ ] Camera System (WASD Movement)
+- [ ] Lighting & Shading
+- [ ] Loading complex meshes from files (e.g., .obj)
+- [ ] Texture Mapping
+- [ ] Clipping (against screen edges)
 
 ## 📄 License
 
